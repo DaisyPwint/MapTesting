@@ -7,3 +7,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
+
+.leaflet-marker-icon.custom-marker-icon {
+  border-radius: 50%;
+  object-fit: cover;
+}

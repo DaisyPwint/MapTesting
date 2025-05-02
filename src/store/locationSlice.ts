@@ -18,11 +18,11 @@ const locationSlice = createSlice({
         },
         editLocation: (state, { payload }: PayloadAction<FormValues>) => {
             const index = state.locations.findIndex(location => location.id === payload.id);
-            if(index !== -1) state.locations[index] = payload
+            if (index !== -1) state.locations[index] = payload
         }
     }
 })
 
-export const { addLocations, editLocation} = locationSlice.actions;
+export const { addLocations, editLocation } = locationSlice.actions;
 
 export default locationSlice.reducer;

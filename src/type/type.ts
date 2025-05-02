@@ -1,8 +1,13 @@
 export interface FormValues {
-  id: string;
+  id?: string,
   name: string;
   latitude: string;
   longitude: string;
   description?: string | undefined;
-  image?: undefined;
+  image: File;
+}
+
+export interface Coordinates{
+  lat: number;
+  lng: number
 }
